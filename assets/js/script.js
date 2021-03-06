@@ -1,9 +1,20 @@
-// The concat() method is used to merge two or more arrays
-// This method does not change the existing arrays, but instead returns a new array.
-// source - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
-const array1 = ['a', 'b', 'c'];
-const array2 = ['d', 'e', 'f'];
-const array3 = array1.concat(array2);
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// expected output: Array ["Dec", "Feb", "Jan", "March"]
 
-console.log(array3);
-// expected output: Array ["a", "b", "c", "d", "e", "f"]
+// Watch out for sorting numbers!
+// Read Docs!!!!
+// If compareFunction is not provided, the array elements are converted to strings,
+// then sorted according to each characters Unicode code point of view
+// What is unicode? - https://flaviocopes.com/unicode/
+// const array1 = [1, 30, 4, 21, 100000];
+// array1.sort();
+// console.log(array1);
+// expected output: Array [1, 100000, 21, 30, 4]
+
+// Properly sort numbers by providing compareFunction
+// const numArr = [1, 30, 4, 21, 100000];
+// numArr.sort((a, b) => a - b);
+// console.log(numArr);
+// expected output: Array [1, 100000, 21, 30, 4]
