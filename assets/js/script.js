@@ -1,17 +1,17 @@
-const greetBtn = document.querySelector('.greet-btn');
-const noGreetBtn = document.querySelector('.stop-greet-btn');
+const timer = setInterval(showTime, 1000);
+const stopBtn = document.querySelector('.stop-btn');
 
-let myGreeting;
-// alert hello after 3 seconds
-function sayHello() {
-  myGreeting = setTimeout(function () {
-    alert('Hello');
-  }, 3000);
+// update the browser with the time
+function showTime() {
+  const myDate = new Date();
+  const myTime = myDate.toLocaleTimeString();
+
+  document.querySelector('.demo').innerHTML = myDate;
 }
 
-function stopSayingHello() {
-  clearTimeout(myGreeting);
+// stop the timer
+function myStopFunction() {
+  clearInterval(timer); // stops interval
 }
 
-greetBtn.addEventListener('click', sayHello);
-noGreetBtn.addEventListener('click', stopSayingHello);
+stopBtn.addEventListener('click', myStopFunction);
