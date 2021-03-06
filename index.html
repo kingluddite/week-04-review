@@ -3,10 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM - Remove Nodes</title>
+    <title>DOM - Clone Nodes</title>
   </head>
   <body>
-    <p id="my-par"><img src="https://i.imgur.com/ZpGWLZM.png" alt="cat" /></p>
+    <ul class="list-one">
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ul>
+    <ul class="list-two">
+      <li>Water</li>
+      <li>Milk</li>
+    </ul>
+
+    <p>Click the button to copy an item from one list to another.</p>
+
+    <!-- <button id="my&#45;btn" onclick="addItem()">Try it</button> -->
+    <button id="my-btn">Try it</button>
+
+    <p>
+      Try changing the <em>deep</em> parameter to false, and only an empty LI
+      element will be cloned.
+    </p>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

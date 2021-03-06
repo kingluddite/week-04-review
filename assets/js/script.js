@@ -1,13 +1,17 @@
-const myParaEl = document.querySelector('#my-par');
-// this will remove the entire `<p>` and it's child `<img>`
-// myParaEl.remove();
-// this just removes the `<img>`
-// myParaEl.removeChild(myParaEl.firstChild);
+function addItem() {
+  const item = document.querySelector('.list-two').lastElementChild;
+  const clonedItem = item.cloneNode(true);
+  // console.log(clonedItem);
+  document.querySelector('.list-one').appendChild(clonedItem);
+}
 
-// while loop to remove
-// all the child nodes of a parent node (without removing the parent node)
-// const bodyEl = document.querySelector('body');
-// while (bodyEl.firstChild) {
-//   bodyEl.removeChild(bodyEl.firstChild);
-// }
-// Review slide for "Removing Nodes"
+// using "vanilla" event listener
+// we remove the inline event listener
+const myBtn = document.querySelector('#my-btn');
+myBtn.addEventListener('click', addItem);
+
+// review last 4 slides on:
+// * cloning nodes
+// * inline OnEvent Handlers
+// * mouse events
+// * addEventListener
