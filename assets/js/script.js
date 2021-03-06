@@ -1,21 +1,17 @@
-function addItem() {
-  const item = document.querySelector('.list-two').lastElementChild;
-  const clonedItem = item.cloneNode(true);
-  // console.log(clonedItem);
-  document.querySelector('.list-one').appendChild(clonedItem);
+const greetBtn = document.querySelector('.greet-btn');
+const noGreetBtn = document.querySelector('.stop-greet-btn');
+
+let myGreeting;
+// alert hello after 3 seconds
+function sayHello() {
+  myGreeting = setTimeout(function () {
+    alert('Hello');
+  }, 3000);
 }
 
-// using "vanilla" event listener
-// we remove the inline event listener
-const myBtn = document.querySelector('#my-btn');
-// add listener
-myBtn.addEventListener('click', addItem);
+function stopSayingHello() {
+  clearTimeout(myGreeting);
+}
 
-// here is an example of removeEventListener()
-// https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_addeventlistener_remove
-
-// review last 4 slides on:
-// * cloning nodes
-// * inline OnEvent Handlers
-// * mouse events
-// * addEventListener
+greetBtn.addEventListener('click', sayHello);
+noGreetBtn.addEventListener('click', stopSayingHello);
