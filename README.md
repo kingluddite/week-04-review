@@ -11,3 +11,15 @@
   - reverse()
 - Loop through string
   - The String Method
+- The HTML DOM
+- Locating Nodes
+- Creating Nodes
+- Appending Nodes
+- Removing Nodes
+- Cloning Nodes
+- Inline OnEvent Handlers
+- Mouse Events
+- setTimeout() and setInterval()
+- clearTimeout and clearInterval()
+- addEventListener()
+- removeEventListener()
