@@ -1,9 +1,11 @@
-let str = '';
+let scores = [80, 90, 70];
 
-for (let i = 0; i < 9; i++) {
-  str = str + i;
+for (let score of scores) {
+  score = score + 5;
+  console.log(score);
 }
 
-console.log(str);
-// visualize tool - http://www.pythontutor.com/visualize.html#mode=edit
-// expected output: "012345678"
+/* output */
+/* 85 */
+/* 95 */
+/* 75 */
