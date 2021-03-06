@@ -1,15 +1,22 @@
-// strings are not arrays
-// But in some ways they are similar to arrays
-// you can access each character in a string by it's index
-let str = 'icanloopthroughanarray';
-for (let i = 0; i < str.length; i++) {
-  console.log(str[i]);
-}
-/* view the console to see this! */
+// What is the DOM?
+// View Source Code vs viewing DOM
+// grabbing nodes using querySelector
+//   or getElementById('myH1')
+//   or getElementsByTagName('h1')[0]
+const htmlEl = document.querySelector('head').parentNode;
+console.log(htmlEl);
 
-// Change a letter
-let dogStr = 'dog';
-dogStr[0] = 'l';
+// note: nextSibling returns #text
+// spaces are text nodes
+// review HTML Tree Generator
+const nxtSibEl = document.querySelector('h1').nextElementSibling;
+console.log(nxtSibEl);
 
-console.log(dogStr);
-// why not log? The reason is that strings are immutable
+const firstChildEl = document.querySelector('body').firstElementChild;
+console.log(firstChildEl);
+
+const lastChildEl = document.querySelector('body').lastElementChild;
+console.log(lastChildEl);
+
+// Discuss Text, Element, Comment
+// vs using "Element" returns tags
