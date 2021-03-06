@@ -1,7 +1,8 @@
-// the Break Statement terminated the loop right when the condition was met
+// when i is equal to 4, it skips over that iteration and console.log(i)
+//   doesn't run again until the next time that the code loops
 for (let i = 1; i <= 5; i++) {
   if (i === 4) {
-    break;
+    continue;
   }
   console.log(i);
 }
@@ -11,5 +12,6 @@ for (let i = 1; i <= 5; i++) {
 /*
 1
 2 
-3 
+3
+5
 */
