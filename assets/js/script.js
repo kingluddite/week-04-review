@@ -1,22 +1,15 @@
-// What is the DOM?
-// View Source Code vs viewing DOM
-// grabbing nodes using querySelector
-//   or getElementById('myH1')
-//   or getElementsByTagName('h1')[0]
-const htmlEl = document.querySelector('head').parentNode;
-console.log(htmlEl);
+// grab the div with a class of container
+const containerEl = document.querySelector('.container');
+const containerTwoEl = document.querySelector('.container-two');
+// create a h1 element
+const h1El = document.createElement('h1');
+// create text
+const h1ElText = document.createTextNode('Hello World!');
+// add text to the h1 element
+h1El.appendChild(h1ElText);
+// add the h1 to the div element
+containerEl.appendChild(h1El);
+containerTwoEl.insertBefore();
 
-// note: nextSibling returns #text
-// spaces are text nodes
-// review HTML Tree Generator
-const nxtSibEl = document.querySelector('h1').nextElementSibling;
-console.log(nxtSibEl);
-
-const firstChildEl = document.querySelector('body').firstElementChild;
-console.log(firstChildEl);
-
-const lastChildEl = document.querySelector('body').lastElementChild;
-console.log(lastChildEl);
-
-// Discuss Text, Element, Comment
-// vs using "Element" returns tags
+// how to use insertBefore() 
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_node_insertbefore
