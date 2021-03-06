@@ -1,11 +1,15 @@
-let scores = [80, 90, 70];
-
-for (let score of scores) {
-  score = score + 5;
-  console.log(score);
+// the Break Statement terminated the loop right when the condition was met
+for (let i = 1; i <= 5; i++) {
+  if (i === 4) {
+    break;
+  }
+  console.log(i);
 }
 
 /* output */
-/* 85 */
-/* 95 */
-/* 75 */
+
+/*
+1
+2 
+3 
+*/
