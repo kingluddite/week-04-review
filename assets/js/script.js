@@ -8,7 +8,11 @@ function addItem() {
 // using "vanilla" event listener
 // we remove the inline event listener
 const myBtn = document.querySelector('#my-btn');
+// add listener
 myBtn.addEventListener('click', addItem);
+
+// here is an example of removeEventListener()
+// https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_addeventlistener_remove
 
 // review last 4 slides on:
 // * cloning nodes
