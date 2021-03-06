@@ -13,3 +13,6 @@ dogStr[0] = 'l';
 
 console.log(dogStr);
 // why not log? The reason is that strings are immutable
+
+// the length of a string
+// dogStr.length; // 3
