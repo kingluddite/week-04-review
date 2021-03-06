@@ -2,7 +2,7 @@
 
 - For Loops
 - For ... Of Loops
-- Break & Continue
+- Break vs Continue
 - More Array Methods:
   - concat()
   - sort()
@@ -10,3 +10,4 @@
   - splice()
   - reverse()
 - Loop through string
+  - The String Method
